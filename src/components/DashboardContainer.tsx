@@ -15,7 +15,7 @@ const DashboardContainer = () => {
   );
 
   return (
-    <div className="ml-16 mt-16 w-[calc(100%-64px)] border-1 border-black flex flex-col gap-8 items-center">
+    <div className="sm:ml-16 sm:mt-16 mt-[-20px] md:w-[calc(100%-64px)] border-1 border-black flex flex-col gap-8 items-center">
       <DashboardConfig />
       <DashboardContent data={updatedData} />
       <Pagination

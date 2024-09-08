@@ -8,7 +8,7 @@ interface Props {
 
 const Pagination = ({ pages, currentPage, handleCurrentPage }: Props) => {
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1 mt-auto">
       <button
         className={`hover:bg-gray-100 rounded-full h-10 w-10 flex justify-center items-center ${
           currentPage === 1 && "text-gray-400"
@@ -21,6 +21,7 @@ const Pagination = ({ pages, currentPage, handleCurrentPage }: Props) => {
       </button>
       {Array.from({ length: pages }).map((_, index) => (
         <button
+          key={index}
           onClick={() => handleCurrentPage(index + 1)}
           className={` rounded-full p-2 h-10 w-10 ${
             currentPage - 1 === index
