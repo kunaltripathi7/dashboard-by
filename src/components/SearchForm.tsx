@@ -27,7 +27,7 @@ const SearchForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex gap-3 items-start justify-center sm:justify-normal flex-wrap "
+      className="flex gap-3 items-start justify-center sm:justify-normal flex-wrap h-12 "
     >
       <div className="flex flex-col gap-1 relative pb-2">
         <input
